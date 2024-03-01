@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AlphaAmazon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/back-office.html">Back-office</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <form id="my-form">
+        <div class="mb-3">
+          <label for="name" class="form-label">Product Name:</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="brand" class="form-label">Product brand:</label>
+          <input type="text" class="form-control" id="brand" required />
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Product description:</label>
+          <input type="text" class="form-control" id="description" required />
+        </div>
+        <div class="mb-3">
+          <label for="imageUrl" class="form-label">Insert image URL:</label>
+          <input type="url" class="form-control" id="imageUrl" required />
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Product price:</label>
+          <input type="text" class="form-control" id="price" required />
+        </div>
+
+        <button type="submit" class="btn btn-success" id="add">Add product</button>
+      </form>
+    </div>
+    <div class="container text-center">
+      <a href="/index.html" class="btn btn-info">Back to Home</a>
+    </div>
+
+    <script src="back-office.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
